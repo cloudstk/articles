@@ -43,9 +43,9 @@ img
 Figure 1.3: Creating a new Data Factory.  
 
    2.2. **On the New data factory page:** 
-   The configuration of the data factory shown in figure 1.4. Follow the below steps and click the **Create** button once the configuration has been  completed.  
-   * Enter the ADF’S name in the ‘Name’ box.
-   * Select a version as ‘V2’.
+      The configuration of the data factory shown in figure 1.4. Follow the below steps and click the **Create** button once the configuration has been  completed.
+     * Enter the ADF’S name in the ‘Name’ box.
+     * Select a version as ‘V2’.
    * Select your Azure Subscription.
    * For Resource Group, do one of the following steps:
         o Select Use existing, and select an existing resource group from the list.  
