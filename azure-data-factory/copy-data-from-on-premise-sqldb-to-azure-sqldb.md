@@ -19,45 +19,46 @@ Before you begin this tutorial, you must have the following:
 There are several ways to connect to SQL server. In this tutorial, I am using SSMS to connect both on-premises and Azure SQL server database. 
 Here, I assume you have successfully connected both on-promises SQL server database and Azure SQL database.  
 
-1.1. **Creating a sample table an on-promises  SQL server database**
-In this step, we will create a sample table called ‘orders’ in the **EverestCycleStores** database and will put a few records into it. We will use this sample data as a source to copy data into the Azure SQL database. The below SQL scripts are used to create orders table and insert sample data into it. The created table shown in figure 1.1.
+ 1.1. **Creating a sample table an on-promises  SQL server database**
+ In this step, we will create a sample table called ‘orders’ in the **EverestCycleStores** database and will put a few records into it. We will use this sample data as a source to copy data into the Azure SQL database. The below SQL scripts are used to create orders table and insert sample data into it. The created table shown in figure 1.1.
 
-![Image](https://github.com/cloudstk/articles/blob/master/azure-data-factory/media/on-promises-sql-server-database.jpg "icon")
-Figure 1.1: Creating a table on-promises SQL server database
+ ![Image](https://github.com/cloudstk/articles/blob/master/azure-data-factory/media/on-promises-sql-server-database.jpg "icon")
 
-1.2. **Creating a sample table an Azure SQL database**  
-Similarly, we will create a sample table called ‘orders’ in the **az-sqlserverdb** database where we’ll copy data from on-premise SQL server database source. The table script and created table shown in figure 1.2.  
+ Figure 1.1: Creating a table on-promises SQL server database
 
-img
-Fig 1.2 Creating a table in the Azure SQL database
+ 1.2. **Creating a sample table an Azure SQL database**  
+ Similarly, we will create a sample table called ‘orders’ in the **az-sqlserverdb** database where we’ll copy data from on-premise SQL server database source. The table script and created table shown in figure 1.2.  
+
+ img
+ Fig 1.2 Creating a table in the Azure SQL database
 
 
 2. **Building a Basic Azure Data Factory Pipeline**  
 Now, we have an on-premises SQL database with sample data in the order table and Azure SQL database with the order table where we will copy data from the source.
 In this step, we’ll learn how to copy data from an on-premises  SQL Server database source into an Azure SQL Database using Azure Data Factory(ADF) user interface (UI). Follow the below steps to create an ADF v2.
 
-   2.1. **Create a data factory**
-      To create a new Azure Data Factory, Click **Create a resource** on the left menu, select **Analytics**, and then select **Data Factory** as shown in Figure 1.3.  
+ 2.1. **Create a data factory**
+ To create a new Azure Data Factory, Click **Create a resource** on the left menu, select **Analytics**, and then select **Data Factory** as shown in Figure 1.3.  
 
 
-Figure 1.3: Creating a new Data Factory.
+ Figure 1.3: Creating a new Data Factory.
 
-   2.2. **On the New data factory page:** 
-        The configuration of the data factory shown in figure 1.4. Follow the below steps and click the **Create** button once the configuration has been  completed.
+ 2.2. **On the New data factory page:** 
+ The configuration of the data factory shown in figure 1.4. Follow the below steps and click the **Create** button once the configuration has been  completed.
    * Enter the ADF’S name in the ‘Name’ box.
-     * Select a version as ‘V2’. 
-     * Select your Azure Subscription. 
-     * For Resource Group, do one of the following steps: 
-        o Select Use existing, and select an existing resource group from the list.
-        o Select Create new, and enter the name of a resource group.
+   * Select a version as ‘V2’. 
+   * Select your Azure Subscription. 
+   * For Resource Group, do one of the following steps: 
+      o Select Use existing, and select an existing resource group from the list.
+      o Select Create new, and enter the name of a resource group.
 
-To learn about resource groups, see [Using resource groups to manage your Azure resources](https://docs.microsoft.com/en-us/azure/azure-resource-manager/manage-resource-groups-portal).
+  To learn about resource groups, see [Using resource groups to manage your Azure resources](https://docs.microsoft.com/en-us/azure/azure-resource-manager/manage-resource-groups-portal).
 
    * Select a location for the data factory.
    * Select Create.
 
 img
-Figure 1.4: A new Data Factory configuration
+  Figure 1.4: A new Data Factory configuration
 
 After the creation is complete, you see the **Data Factory** blade as shown in figure 1.5. Select the **Author & Monitor** tile to start the Azure Data Factory application on a separate tab.
 
