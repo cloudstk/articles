@@ -34,32 +34,32 @@ Here, I assume you have successfully connected both on-promises SQL server datab
       Fig 1.2 Creating a table in the Azure SQL database
 
 
-2. **Building a Basic Azure Data Factory Pipeline**  
-Now, we have an on-premises SQL database with sample data in the order table and Azure SQL database with the order table where we will copy data from the source.  
-In this step, we’ll learn how to copy data from an on-premises  SQL Server database source into an Azure SQL Database using Azure Data Factory(ADF) user interface (UI). Follow the below steps to create an ADF v2.  
+2. **Building a Basic Azure Data Factory Pipeline**   
+Now, we have an on-premises SQL database with sample data in the order table and Azure SQL database with the order table where we will copy data from the source.   
+In this step, we’ll learn how to copy data from an on-premises  SQL Server database source into an Azure SQL Database using Azure Data Factory(ADF) user interface (UI). Follow the below steps to create an ADF v2. 
 
-2.1. **Create a data factory**
-      To create a new Azure Data Factory, Click **Create a resource** on the left menu, select **Analytics**,and then select **Data Factory** as shown in Figure 1.3.  
+      2.1. **Create a data factory**  
+      To create a new Azure Data Factory, Click **Create a resource** on the left menu, select **Analytics**,and then select **Data Factory** as shown in Figure 1.3. 
 
 
-      Figure 1.3: Creating a new Data Factory.
+      Figure 1.3: Creating a new Data Factory.  
 
-      2.2. **On the New data factory page:** 
-      The configuration of the data factory shown in figure 1.4. Follow the below steps and click the **Create** button once the configuration has been  completed.
-      * Enter the ADF’S name in the ‘Name’ box.
-      * Select a version as ‘V2’. 
-      * Select your Azure Subscription. 
-      * For Resource Group, do one of the following steps: 
-       o Select Use existing, and select an existing resource group from the list.
-       o Select Create new, and enter the name of a resource group.
+      2.2. **On the New data factory page:**   
+      The configuration of the data factory shown in figure 1.4. Follow the below steps and click the **Create** button once the configuration has been  completed.  
+      * Enter the ADF’S name in the ‘Name’ box.  
+      * Select a version as ‘V2’.   
+      * Select your Azure Subscription.   
+      * For Resource Group, do one of the following steps:   
+       o Select Use existing, and select an existing resource group from the list.  
+       o Select Create new, and enter the name of a resource group.  
 
-      To learn about resource groups, see [Using resource groups to manage your Azure resources](https://docs.microsoft.com/en-us/azure/azure-resource-manager/manage-resource-groups-portal).
+      To learn about resource groups, see [Using resource groups to manage your Azure resources](https://docs.microsoft.com/en-us/azure/azure-resource-manager/manage-resource-groups-portal).  
 
-      * Select a location for the data factory.
-      * Select Create.
+      * Select a location for the data factory.  
+      * Select Create.  
 
-img
-Figure 1.4: A new Data Factory configuration
+      img
+      Figure 1.4: A new Data Factory configuration
 
 After the creation is complete, you see the **Data Factory** blade as shown in figure 1.5. Select the **Author & Monitor** tile to start the Azure Data Factory application on a separate tab.
 
