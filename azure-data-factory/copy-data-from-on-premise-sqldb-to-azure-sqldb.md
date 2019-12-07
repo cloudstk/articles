@@ -10,12 +10,12 @@ Before you begin this tutorial, you must have the following:
 
 * Azure Subscription, if you don't already have an Azure subscription, create a [free account](https://www.google.com/aclk?sa=l&ai=DChcSEwiy9P_7m6LmAhUDiNUKHR_pCbUYABAAGgJ3cw&sig=AOD64_3nuMiolM8L8ymifrYSIi_n6QuLkg&q=&ved=2ahUKEwjd7Pb7m6LmAhWul4sKHbl2BrMQ0Qx6BAgREAE&adurl=).
 * On-premises SQL Server database: You can use SQL Sever Management Studio([SSMS](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15)) or [Azure Data Studio](https://docs.microsoft.com/en-us/sql/azure-data-studio/download?view=sql-server-ver15) to create sample database.
-* Azure SQL Database: If you don’t have an Azure SQL database, see Create a single database in an Azure SQL Database article for steps to create one.
+* Azure SQL Database: If you don’t have an Azure SQL database, see [Create a single database in an Azure SQL Database article for steps to create one](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-single-database-get-started?tabs=azure-portal).
 
 
 **Steps:**  
 ---------------------------------  
-1.Creating  a sample table an on-promises SQL server database and Azure SQL database.
+1. Creating  a sample table an on-promises SQL server database and Azure SQL database.
 There are several ways to connect to SQL server. In this tutorial, I am using SSMS to connect both on-premises and Azure SQL server database. 
 Here, I assume you have successfully connected both on-promises SQL server database and Azure SQL database.  
 
