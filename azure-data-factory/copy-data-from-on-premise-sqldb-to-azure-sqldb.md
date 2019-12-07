@@ -39,7 +39,7 @@ In this step, we’ll learn how to copy data from an on-premises  SQL Server dat
    2.1. **Create a data factory**
       To create a new Azure Data Factory, Click **Create a resource** on the left menu, select **Analytics**, and then select **Data Factory** as shown in Figure 1.3.  
 
-![Image](https://github.com/cloudstk/azure-data-factory/media/ADF_author and monitor.jpg "icon")
+![Image](azure-data-factory\media\on-promises-sql-server-database.jpg "icon")
 Figure 1.3: Creating a new Data Factory.
 
    2.2. **On the New data factory page:** 
