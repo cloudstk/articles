@@ -29,7 +29,7 @@ Here, I assume you have successfully connected both on-promises SQL server datab
       1.2. **Creating a sample table an Azure SQL database**  
       Similarly, we will create a sample table called ‘orders’ in the **az-sqlserverdb** database where we’ll copy data from on-premise SQL server database source. The table script and created table shown in figure 1.2.  
 
-      img
+       ![Image](https://github.com/cloudstk/articles/blob/master/azure-data-factory/media/on-promises-sql-server-database.jpg "icon")
       Fig 1.2 Creating a table in the Azure SQL database
 
 
