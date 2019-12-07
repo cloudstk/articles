@@ -217,14 +217,18 @@ Figure 3.0: Click on Edit pipeline to review and run the pipeline.
 You can see the Factory Resources – Pipeline, Datasets  
 Select the pipeline we have just created to run the pipeline manually.  
 - Click on **Debug** button, it will begin to run the pipeline.
-When it has completed successfully, you can see the **Succssed** status. Click the **eyeglasses** icon to see more details.
+When it has completed successfully, you can see the **Succssed** status. Click the **eyeglasses** icon to see more details, as shown in figure 3.2.
 
  ![Image](https://github.com/cloudstk/articles/blob/master/azure-data-factory/media/adf-pipeline-execution.jpg "icon")  
 
 Figure 3.1: Azure Data Factory Pipeline Execution.
 
+
+ ![Image](https://github.com/cloudstk/articles/blob/master/azure-data-factory/media/copy-data-performance-details.jpg "icon")  
+Figure 3.2: copy-data-performance-details
+
 ---------------------------------------------------------
-In this article, we have created an Azure Data Factory pipleline to copy data from on-permises SQL Server to Azure SQL Database. We have looked Self-hosted integration time to connect on-permises SQL Server instance and an Azure SQL database as a destination data store in a copy operation.Finally, we have executed an Azure Data Factory Pipeline and found data copied to the target database successfully.
+In this article, we have created an Azure Data Factory pipleline to copy data from on-permises SQL Server to Azure SQL Database. We have looked Self-hosted integration time to connect on-permises SQL Server instance and an Azure SQL database as a destination data store in a copy operation.Finally, we have executed an Azure Data Factory Pipeline successfully and we have seen the data copied from the source to the target database successfully.
 
 
 
