@@ -22,7 +22,7 @@ Here, I assume you have successfully connected both on-promises SQL server datab
       1.1. **Creating a sample table an on-promises  SQL server database**  
       In this step, we will create a sample table called ‘orders’ in the **EverestCycleStores** database and will put a few records into it. We will use this sample data as a source to copy data into the Azure SQL database. The below SQL scripts are used to create orders table and insert sample data into it. The created table shown in figure 1.1.   
 
-   ![Image](https://github.com/cloudstk/articles/blob/master/azure-data-factory/media/on-promises-sql-server-database.jpg "icon")
+   ![Image](https://github.com/cloudstk/articles/blob/master/azure-data-factory/media/on-permises-sql-server-database.jpg "icon")
 
       Figure 1.1: Creating a table on-promises SQL server database
 
