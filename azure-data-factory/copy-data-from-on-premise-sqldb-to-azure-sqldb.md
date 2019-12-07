@@ -4,11 +4,12 @@ Copy Data From On-Premise SQL Server To Azure SQL Database Using Azure Data Fact
 This article shows you how to use Azure Data Factory  to copy data from on-promise SQL server source to an Azure SQL database destination.
 
 **Prerequisites**
+---------------------------------  
 
 Before you begin this tutorial, you must have the following:
 
 * Azure Subscription, if you don't already have an Azure subscription, create a [free account](https://www.google.com/aclk?sa=l&ai=DChcSEwiy9P_7m6LmAhUDiNUKHR_pCbUYABAAGgJ3cw&sig=AOD64_3nuMiolM8L8ymifrYSIi_n6QuLkg&q=&ved=2ahUKEwjd7Pb7m6LmAhWul4sKHbl2BrMQ0Qx6BAgREAE&adurl=).
-* On-premises SQL Server database: You can use SQL Sever Management Studio(SSMS) or Azure Data Studio to create sample database.
+* On-premises SQL Server database: You can use SQL Sever Management Studio([SSMS](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15)) or [Azure Data Studio](https://docs.microsoft.com/en-us/sql/azure-data-studio/download?view=sql-server-ver15) to create sample database.
 * Azure SQL Database: If you don’t have an Azure SQL database, see Create a single database in an Azure SQL Database article for steps to create one.
 
 
@@ -150,7 +151,7 @@ c)	Select your Azure **subscription**.
 d)	Select **Server name** and **Database**.    
 e)	Enter **User name** and **Password**.    
 f)	Click **Create**.   
- 
+
 You can test database connection by clicking the **Test connection**.
 
 
