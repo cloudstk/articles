@@ -13,7 +13,8 @@ Before you begin this tutorial, you must have the following:
 
 
 **Steps:**  
-1. Creating  a sample table an on-promises SQL server database and Azure SQL database.
+---------------------------------  
+1.Creating  a sample table an on-promises SQL server database and Azure SQL database.
 There are several ways to connect to SQL server. In this tutorial, I am using SSMS to connect both on-premises and Azure SQL server database. 
 Here, I assume you have successfully connected both on-promises SQL server database and Azure SQL database.  
 
@@ -140,12 +141,12 @@ img
 Figure 2.5: 
 
 Now,  we will configure the **New linked service** for Destination data store:  
-a)	On the **New linked service** page, enter the linked service’s **Name** and an option description. 
-b)	Select the **AutoResolveIntegrationRuntime** from **Connection via integration**.   
-c)	Select your Azure **subscription**.  
-d)	Select **Server name** and **Database**.  
-e)	Enter **User name** and **Password**.  
-f)	Click **Create**.  
+a)	On the **New linked service** page, enter the linked service’s **Name** and an option description.   
+b)	Select the **AutoResolveIntegrationRuntime** from **Connection via integration**.     
+c)	Select your Azure **subscription**.    
+d)	Select **Server name** and **Database**.    
+e)	Enter **User name** and **Password**.    
+f)	Click **Create**.    
 You can test database connection by clicking the **Test connection**.
 
 
@@ -153,7 +154,8 @@ You can test database connection by clicking the **Test connection**.
 img
 Figure 2.6.
 
-Table mapping
+**Table mapping**
+---------------------------------
 a)	On the **Table mapping** page, select the **orders** table as our destination, the one we created earlier in the step 1.2.  
 b)	Click **down arrow** to see the schema and to preview the data.  
 c)	Click **Next** to continue configuration process.  
@@ -163,14 +165,16 @@ img
 Figure 2.7:
 
 **Column mapping**
-a)	On the **Column mapping** page, map the source and destination columns.   
-b)	Click **Next** to continue.   
+---------------------------------
+a)	On the **Column mapping** page, map the source and destination columns.     
+b)	Click **Next** to continue.     
 
 img
 Figure 2.8:
 
 
 **Setting page**  
+---------------------------------
 a)	On the **Setting page** you will see the options to set **Fault tolerance** and  **Performance settings**. We’ll keep the default options now, as shown in the figure 2.9.   
 b)	Click **Next** to continue.  
 
@@ -181,7 +185,8 @@ img
 
 Figure 2.9:
 
-Summary page  
+**Summary page**  
+---------------------------------
 a)	Here, we can see a summary of all the configurations that we have done.   
 b)	Review information in the **Summary** page, and click **Next** to deploy the Copy Data pipeline.  
 
@@ -189,7 +194,8 @@ b)	Review information in the **Summary** page, and click **Next** to deploy the 
 img
 Figure 3.0: Summary of copy data configuration
 
-**Edit pipeline and Monitor**  
+**Edit pipeline and Monitor** 
+------------------------------------------------------------------ 
 On the **Deployment** page, Click on **Edit pipeline** to review the artifacts created by Azure Data Factory.  
 
 
