@@ -79,11 +79,14 @@ img
 Figure 1.7:  Enter the Task Name, Description and schedule attributes of the process.
 
 **Source data store**
+---------------------------------
 On the **Source data store** page, click **Database** tab, click the **Create new connection**
 On the **New Linked Service** page, select SQL Server, and then select **Continue**.
 
 img
 Figure 1.8:
+
+Now, enter 'SqlServerLS' as the linked server's name and fill in 'Server name', 'Database name' and the credentials fields for the source Azure SQL database and leave all other fields as is.
 
 Here are the steps to set up this source:  
 On the New linked service page, enter the linked server’s Name and then click +New link in the Connection via integration runtime as shown in the figure 1.9 
@@ -134,8 +137,8 @@ Figure 2.4: Testing source SQL server connection from the ADF
 **Destination data store**
 ---------------------------------
 
-a)	On the **Destination data store** page, click **Azure** tab and click the **Create new connection** 
-b)	On the **New Linked Service** page, select **Azure SQL Database**, and then select **Continue**, as shown in Figure 2.5. 
+a)	On the **Destination data store** page, click **Azure** tab and click the **Create new connection**   
+b)	On the **New Linked Service** page, select **Azure SQL Database**, and then select **Continue**, as shown in Figure 2.5.   
 
 img
 Figure 2.5: 
@@ -146,7 +149,8 @@ b)	Select the **AutoResolveIntegrationRuntime** from **Connection via integratio
 c)	Select your Azure **subscription**.    
 d)	Select **Server name** and **Database**.    
 e)	Enter **User name** and **Password**.    
-f)	Click **Create**.    
+f)	Click **Create**.   
+ 
 You can test database connection by clicking the **Test connection**.
 
 
