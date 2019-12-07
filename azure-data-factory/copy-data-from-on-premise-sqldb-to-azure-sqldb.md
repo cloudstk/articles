@@ -28,6 +28,7 @@ Similarly, we will create a sample table called ‘orders’ in the **az-sqlserv
 <img>
 Fig 1.2 Creating a table in the Azure SQL database
 
-2. **Building a Basic Azure Data Factory Pipeline**  
+
+2.**Building a Basic Azure Data Factory Pipeline**  
 Now, we have an on-premises SQL database with sample data in the order table and Azure SQL database with the order table where we will copy data from the source.
 In this step, we’ll learn how to copy data from an on-premises  SQL Server database source into an Azure SQL Database using Azure Data Factory(ADF) user interface (UI). Follow the below steps to create an ADF v2.
