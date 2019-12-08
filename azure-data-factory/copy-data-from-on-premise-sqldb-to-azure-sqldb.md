@@ -234,10 +234,10 @@ Figure 3.1: Azure Data Factory Pipeline Execution.
 
 
  ![Image](https://github.com/cloudstk/articles/blob/master/azure-data-factory/media/copy-data-performance-details.jpg "icon")  
-Figure 3.2: Copy-data-performance-details
+Figure 3.2: Copy data performance details
 
 ---------------------------------------------------------
-In this article, we have created an Azure Data Factory pipleline to copy data from on-permises SQL Server to Azure SQL Database. We have looked Self-hosted integration time to connect on-permises SQL Server instance and an Azure SQL database as a destination data store in a copy operation. Finally, we have executed an Azure Data Factory Pipeline successfully and we have seen the data copied from the source to the target database successfully.
+In this article, we have created an Azure Data Factory pipleline to copy data from on-permises SQL Server to Azure SQL Database. We have looked at Self-hosted integration time to connect on-permises SQL Server instance and an Azure SQL database as a destination data store in a copy operation. Finally, we have executed an Azure Data Factory Pipeline successfully and we have seen the data copied from the source to the target database successfully.
 
 
 
