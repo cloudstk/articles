@@ -22,4 +22,4 @@ In the video below, you will see how to lock a resouce group from the Azure Port
 [![Lock azure resources](http://img.youtube.com/vi/mDOOKrEXAZY/0.jpg)](http://www.youtube.com/watch?v=mDOOKrEXAZY "Lock Azure resources to prevent unexpected changes")
 
 ----------------------
-<!-- In this article, we have looked at How to add a lock to a resouce from the Azure Portal and we have also seen a Warning message when we tried to delete it. -->
+In this article, we have looked at How to add a lock to a resouce from the Azure Portal and we have also seen a Warning message when we tried to delete it.
