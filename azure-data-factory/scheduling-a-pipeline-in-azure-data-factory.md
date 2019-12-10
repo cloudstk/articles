@@ -1,6 +1,6 @@
 Scheduling a Pipeline in Azure Data Factory
 ===========================================
-Azure data factory can be triggered through multiple ways currently there are four ways that you can trigger data factory.
+Azure data factory can be triggered through multiple ways, currently, there are four ways that you can trigger data factory.
 
 Data Factory pipeline can be triggered by
 * Schedule Triggers
@@ -8,7 +8,7 @@ Data Factory pipeline can be triggered by
 * Event Based Triggers
 * Manual Trigger(User interface, Logic app etc.)
 
-In this tutorial, we use a Schedule Trigger to run pipepline. A Schedule Trigger runs pipelines on a specify schedule(start date, recurrence, end date etc)
+In this tutorial, we use a Schedule Trigger to run pipepline. A Schedule Trigger runs pipelines on a specific schedule (start date, recurrence, end date etc)
 
 In the video below, you will see steps to create a Schedule Trigger in Azure Data Factory(ADF)
 
@@ -16,4 +16,4 @@ In the video below, you will see steps to create a Schedule Trigger in Azure Dat
 
 
 -------------------
-In this article, we have looked at how to create a Schedule trigger and publish it. Finally, we have debugged successfully the current Azure Data Factory pipeline.
+In this article, we have looked at how to create a Schedule trigger and publish it. Finally, we have successfully debugged the current Azure Data Factory Pipeline.
