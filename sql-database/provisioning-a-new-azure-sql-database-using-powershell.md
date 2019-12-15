@@ -23,7 +23,7 @@ Connect-AzAccount
 ```
 When run, this command will open a Microsoft login window, as shown figure 1.0. Log in using your Azure subscription creentials.
 
- ![Image](https://github.com/cloudstk/articles/blob/master/azure-data-factory/media/connect-to-zure-subscription.jpg "icon")  
+ ![Image](https://github.com/cloudstk/articles/blob/master/sql-database/media/connect-to-zure-subscription.jpg "icon")  
 
 Figure 1.0: Connect to your Azure subscription.
 
@@ -38,7 +38,7 @@ New-AzResourceGroup @parameters
 ```
 
 You can see that succeeded
- ![Image](https://github.com/cloudstk/articles/blob/master/azure-data-factory/media/new-resource-group.jpg "icon")  
+ ![Image](https://github.com/cloudstk/articles/sql-database/media/new-resource-group.jpg "icon")  
 
 Figure 1.1: The creation of an Azure Resouce Group.
 
@@ -59,7 +59,7 @@ $parameters = @{
 
 New-AzSqlServer @parameters
 ```
- ![Image](https://github.com/cloudstk/articles/blob/master/azure-data-factory/media/create-an-azure-sql-server.jpg "icon")  
+ ![Image](https://github.com/cloudstk/articles/blob/master/sql-database/media/create-an-azure-sql-server.jpg "icon")  
 
 Figure 1.2: The creation of an Azure Resouce Group.
 
@@ -79,7 +79,7 @@ $parameters = @{
 New-AzureRmSqlDatabase @parameters
 ```
 
- ![Image](https://github.com/cloudstk/articles/blob/master/azure-data-factory/media/creation-of-azure-sqldb.jpg "icon")  
+ ![Image](https://github.com/cloudstk/articles/blob/master/sql-database/media/creation-of-azure-sqldb.jpg "icon")  
 
  Figure 1.3: The creation of an Azure Resouce Group.
 
@@ -109,20 +109,20 @@ Connecting to Azure SQL server from ASD is like connenting to any of the SQL ser
 
 * On the *Servers* menu, Click on *New Conenction* to open the Connection pane, as shown figure 1.0
 
- ![Image](https://github.com/cloudstk/articles/blob/master/azure-data-factory/media/new-connection-using-ads "icon")  
+ ![Image](https://github.com/cloudstk/articles/blob/master/sql-database/media/new-connection-using-ads "icon")  
 Figure 1.0: Click on *New Connection*.
 
 
 * Fill in the following fields using the server name, user name, password and then click on *Connect* button to connect to Azure SQL server.
 
- ![Image](https://github.com/cloudstk/articles/blob/master/azure-data-factory/media/ads-connection-prompt.jpg "icon")  
+ ![Image](https://github.com/cloudstk/articles/blob/master/sql-database/media/ads-connection-prompt.jpg "icon")  
 Figure 2.0: *Connection* pane.
 
 
 Once sucessfully connected to the Server, the new *cloudstkdemodb* appears in the list of databases, as shown figure 3.0.
 
 
- ![Image](https://github.com/cloudstk/articles/blob/master/azure-data-factory/media/ads-az-sqlserver-object-explorer.jpg "icon")  
+ ![Image](https://github.com/cloudstk/articles/blob/master/sql-database/media/ads-az-sqlserver-object-explorer.jpg "icon")  
 
 Figure 3.0: An Azure SQL server Object Explorer.
 
