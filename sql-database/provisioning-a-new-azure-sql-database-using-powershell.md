@@ -5,8 +5,9 @@ This article shows you how to create an Azure SQL Database services using Azure 
 Prerequisites
 ---------------------
 Before you begin this tutorial, you must have the following:
-* Azure Subscription, if you don't already have an Azure subscription, create a free account.
+* Azure Subscription, if you don't already have an Azure subscription,[create a free account](https://azure.microsoft.com/en-us/free/search/?&ef_id=EAIaIQobChMIsvT_-5ui5gIVA4jVCh0f6Qm1EAAYASAAEgJ1aPD_BwE:G:s&OCID=AID2000071_SEM_3xJK0DI6&MarinID=3xJK0DI6_341611205015_%2Bazure%20%2Bfree_b_c__60219755501_kwd-323834433994&lnkd=Google_Azure_Brand&dclid=CMDDybr6t-YCFVOA3godxTgK-g) .
 * Azure Data Studio(ADS) with PowerShell Extension, in this tutorial, we will used ADS to edit and run PowerShell scripts, and connect to an Azure SQL Server, see [How to use PowerShell in Azure Data Studio](https://azure.microsoft.com/en-us/resources/videos/azure-friday-how-to-use-powershell-in-azure-data-studio/#time=00h04m45s).
+
 
 In this tutorial, we will look at the following:
 -----------------------------------------------
@@ -14,9 +15,10 @@ In this tutorial, we will look at the following:
 * Configuring a firewall rule for a Microsoft Azure SQL Database Server
 * Connecting to a Microsoft Azure SQL Database Server using ADS
 
-Steps:
+**Steps**:
+-------------
 1. Authenticate your Azure subscription. then start the creation process. as follows.  
-First of all, you have to connect to your subscription using the *Connect-AzAccount* cmdlet.
+First of all, you have to connect to your subscription using the **Connect-AzAccount** cmdlet.
 
 ```powershell
 Connect-AzAccount
@@ -28,7 +30,7 @@ When run, this command will open a Microsoft login window, as shown figure 1.0. 
 Figure 1.0: Connect to your Azure subscription.
 
 2. Create a new resource group
-In this step, we will create an Azure Resource Group by using just a *Name* and *Location* parameters.
+In this step, we will create an Azure Resource Group by using just a **Name** and **Location** parameters.
 ```powershell
 $parameters = @{
     Name               = 'azsqldb-demo-rg'
@@ -40,7 +42,7 @@ New-AzResourceGroup @parameters
 You can see that succeeded
  ![Image](https://github.com/cloudstk/articles/sql-database/media/new-resource-group.jpg "icon")  
 
-Figure 1.1: The creation of an Azure Resouce Group.
+Figure 2: The creation of an Azure Resouce Group.
 
 3. Create an Azure SQL Server
 To create an Azure SQL Server instance, we used the following paramenters:
@@ -59,9 +61,9 @@ $parameters = @{
 
 New-AzSqlServer @parameters
 ```
- ![Image](https://github.com/cloudstk/articles/blob/master/sql-database/media/create-an-azure-sql-server.jpg "icon")  
+ ![Image](https://github.com/cloudstk/articles/sql-database/media/create-an-azure-sql-server.jpg "icon")  
 
-Figure 1.2: The creation of an Azure Resouce Group.
+Figure 3 : The creation of an Azure Resouce Group.
 
 The server is ready, in the next step, we will create an Azure SQL Database.
 
@@ -79,9 +81,9 @@ $parameters = @{
 New-AzureRmSqlDatabase @parameters
 ```
 
- ![Image](https://github.com/cloudstk/articles/blob/master/sql-database/media/creation-of-azure-sqldb.jpg "icon")  
+ ![Image](https://github.com/cloudstk/articles/sql-database/media/creation-of-azure-sqldb.jpg "icon")  
 
- Figure 1.3: The creation of an Azure Resouce Group.
+ Figure 4 : The creation of an Azure Resouce Group.
 
 5. Setting up Firewall rules  
 To allow inbound access for an Azure SQL Server, you must add a specific IPs to the Azure SQL Server firewall rules.
@@ -100,31 +102,34 @@ $parameters = @{
 New-AzSqlServerFirewallRule @parameters
 ```
 
-You're now ready to connect to your Azure SQL Server from your specified IP address.
+ ![Image](https://github.com/cloudstk/articles/sql-database/media/creation-of-azure-sqldb.jpg "icon")  
 
+ Figure 5 : Setting up Firewall rules.
+
+You're now ready to connect to your Azure SQL Server from your specified IP address.
 
 5. Connecting to SQL Azure from Azure Data Studio(ASD)
 Connecting to Azure SQL server from ASD is like connenting to any of the SQL server. To do this, you will need to perform the following steps:
 
 
-* On the *Servers* menu, Click on *New Conenction* to open the Connection pane, as shown figure 1.0
+* On the **Servers** menu, Click on **New Conenction** to open the Connection pane, as shown figure 1.0
 
- ![Image](https://github.com/cloudstk/articles/blob/master/sql-database/media/new-connection-using-ads "icon")  
-Figure 1.0: Click on *New Connection*.
-
-
-* Fill in the following fields using the server name, user name, password and then click on *Connect* button to connect to Azure SQL server.
-
- ![Image](https://github.com/cloudstk/articles/blob/master/sql-database/media/ads-connection-prompt.jpg "icon")  
-Figure 2.0: *Connection* pane.
+ ![Image](https://github.com/cloudstk/articles/sql-database/media/new-connection-using-ads "icon")  
+Figure 6 : Click on **New Connection**.
 
 
-Once sucessfully connected to the Server, the new *cloudstkdemodb* appears in the list of databases, as shown figure 3.0.
+* Fill in the following fields using the server name, user name, password and then click on **Connect** button to connect to Azure SQL server.
+
+ ![Image](https://github.com/cloudstk/articles/sql-database/media/ads-connection-prompt.jpg "icon")  
+Figure 6.1: **Connection** pane.
 
 
- ![Image](https://github.com/cloudstk/articles/blob/master/sql-database/media/ads-az-sqlserver-object-explorer.jpg "icon")  
+Once sucessfully connected to the Server, the new **cloudstkdemodb** appears in the list of databases, as shown figure 3.0.
 
-Figure 3.0: An Azure SQL server Object Explorer.
+
+ ![Image](https://github.com/cloudstk/articles/sql-database/media/ads-az-sqlserver-object-explorer.jpg "icon")  
+
+Figure 6.2: An Azure SQL server Object Explorer.
 
 -------------
 In this article, we have looked at 
