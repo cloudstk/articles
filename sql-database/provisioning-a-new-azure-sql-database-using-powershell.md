@@ -6,7 +6,7 @@ Prerequisites
 ---------------------
 Before you begin this tutorial, you must have the following:
 * Azure Subscription, if you don't already have an Azure subscription,[create a free account](https://azure.microsoft.com/en-us/free/search/?&ef_id=EAIaIQobChMIsvT_-5ui5gIVA4jVCh0f6Qm1EAAYASAAEgJ1aPD_BwE:G:s&OCID=AID2000071_SEM_3xJK0DI6&MarinID=3xJK0DI6_341611205015_%2Bazure%20%2Bfree_b_c__60219755501_kwd-323834433994&lnkd=Google_Azure_Brand&dclid=CMDDybr6t-YCFVOA3godxTgK-g) .
-* Azure Data Studio(ADS) with PowerShell Extension, in this tutorial, we will used ADS to edit and run PowerShell scripts, and connect to an Azure SQL Server, see [How to use PowerShell in Azure Data Studio](https://azure.microsoft.com/en-us/resources/videos/azure-friday-how-to-use-powershell-in-azure-data-studio/#time=00h04m45s).
+* Azure Data Studio(ADS) with PowerShell Extension, in this tutorial, we will used ADS to edit and run PowerShell scripts, and establish a connection to your Azure SQL Server, see [How to use PowerShell in Azure Data Studio](https://azure.microsoft.com/en-us/resources/videos/azure-friday-how-to-use-powershell-in-azure-data-studio/#time=00h04m45s).
 
 
 In this tutorial, we will look at the following:
@@ -111,8 +111,7 @@ You're now ready to connect to your Azure SQL Server from your specified IP addr
 5. Connecting to SQL Azure from Azure Data Studio(ASD)
 Connecting to Azure SQL server from ASD is like connenting to any of the SQL server. To do this, you will need to perform the following steps:
 
-
-* On the **Servers** menu, Click on **New Conenction** to open the Connection pane, as shown figure 1.0
+* On the **Servers** menu, Click on **New Conenction** to open the Connection pane, as shown figure 6.
 
  ![Image](https://github.com/cloudstk/articles/sql-database/media/new-connection-using-ads "icon")  
 Figure 6 : Click on **New Connection**.
@@ -132,4 +131,4 @@ Once sucessfully connected to the Server, the new **cloudstkdemodb** appears in 
 Figure 6.2: An Azure SQL server Object Explorer.
 
 -------------
-In this article, we have looked at 
+In this article, we have looked at how to create an Azure SQL server database using PowerShell. We have also seteup the firewall and Finally, connected an Azure SQL Server with Azure Data Studio.
