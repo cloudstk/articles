@@ -102,7 +102,7 @@ $parameters = @{
 New-AzSqlServerFirewallRule @parameters
 ```
 
- ![Image](https://github.com/cloudstk/articles/blob/master/sql-database/media/setting-up -firewall-rules.jpg "icon")  
+ ![Image](https://github.com/cloudstk/articles/blob/master/sql-database/media/setting-up-firewall-rules.jpg "icon")  
 
  Figure 5 : Setting up Firewall rules.
 
