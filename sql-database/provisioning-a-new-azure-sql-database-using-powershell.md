@@ -137,11 +137,16 @@ Figure 6.1: **Connection** pane.
 
  Figure 6.2: An Azure SQL server Object Explorer.  
 
- 7. Clean up development
-    Use the **Remove-AzResourceGroup** cmdlet to remove the resoruce group. It will removes the 'azsqldb-demo-rg' resouce group and all resouces associated with it from the subscription.
+ 7. Clean up development    
+    Use the **Remove-AzResourceGroup** cmdlet to remove the resoruce group. It will removes the 'azsqldb-demo-rg' resouce group and all resouces associated with it from the subscription.    
     ```powershell
     Remove-AzResourceGroup -ResourceGroupName 'azsqldb-demo-rg'
+
+    This command prompts you for confirmation to delete the resouce group.
+
     ```
-    
+     ![Image](https://github.com/cloudstk/articles/blob/master/sql-database/media/remove-resouce.jpg "icon")  
+
+   Figure 7: The cmdlet prompts you for confirmation to delete the resouce group.
 -------------
  In this article, we have looked at how to create an Azure SQL server database using PowerShell. We have also set up the firewall rules and finally, connected an Azure SQL Server with Azure Data Studio.
