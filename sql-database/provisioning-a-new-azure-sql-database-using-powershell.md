@@ -11,25 +11,25 @@ Before you begin this tutorial, you must have the following:
 
 In this tutorial, we will look at the following:
 -----------------------------------------------
-* Provisioning a New Microsoft Azure SQL Database Server
-* Configuring a firewall rule for a Microsoft Azure SQL Database Server
-* Connecting to a Microsoft Azure SQL Database Server using ADS
+* Provisioning a New Microsoft Azure SQL Database Server.
+* Configuring a firewall rule for a Microsoft Azure SQL Database Server.
+* Connecting to a Microsoft Azure SQL Database Server using ADS.
 
 **Steps**:
 -------------
-1. Authenticate your Azure subscription. then start the creation process. as follows.  
+1. Authenticate your Azure subscription, then start the creation process. as follows.  
 First of all, you have to connect to your subscription using the **Connect-AzAccount** cmdlet.
 
 ```powershell
 Connect-AzAccount
 ```
-When run, this command will open a Microsoft login window, as shown figure 1.0. Log in using your Azure subscription creentials.
+Running this command will open a Microsoft login window, as shown in figure 1.0. Log in using your Azure subscription creentials.
 
  ![Image](https://github.com/cloudstk/articles/blob/master/sql-database/media/connect-to-zure-subscription.jpg "icon")  
 
 Figure 1.0: Connect to your Azure subscription.
 
-2. Create a new resource group
+2. Create a new resource group  
 In this step, we will create an Azure Resource Group by using just a **Name** and **Location** parameters.
 ```powershell
 $parameters = @{
@@ -39,7 +39,7 @@ $parameters = @{
 New-AzResourceGroup @parameters
 ```
 
-You can see that succeeded
+You can see 
  ![Image](https://github.com/cloudstk/articles/sql-database/media/new-resource-group.jpg "icon")  
 
 Figure 2: The creation of an Azure Resouce Group.
