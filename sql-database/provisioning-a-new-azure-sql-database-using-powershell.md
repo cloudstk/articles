@@ -45,7 +45,7 @@ You can see the output as shown in figure 2.
 Figure 2: The creation of an Azure Resouce Group.
 
 3. Create an Azure SQL Server  
-To create an Azure SQL Server instance, we used the following paramenters:  
+To create an Azure SQL Server instance, we use the following paramenters:  
 ```powershell
     $Username   = "cloudstksql"
     $Password   = "pa$$w@rd1" | ConvertTo-SecureString -AsPlainText -Force
@@ -102,7 +102,7 @@ $parameters = @{
 New-AzSqlServerFirewallRule @parameters
 ```
 
- ![Image](https://github.com/cloudstk/articles/blob/master/sql-database/media/creation-of-azure-sqldb.jpg "icon")  
+ ![Image](https://github.com/cloudstk/articles/blob/master/sql-database/media/setting-up -firewall-rules.jpg "icon")  
 
  Figure 5 : Setting up Firewall rules.
 
@@ -125,7 +125,7 @@ Figure 6 : Click on **New Connection**.
 Figure 6.1: **Connection** pane.
 
 
-Once sucessfully connected to the Server, the new **cloudstkdemodb** appears in the list of databases, as shown figure 3.0.  
+Once sucessfully connected to the Server, the new **cloudstkdemodb** appears in the list of databases, as shown figure 6.2.  
 
 
  ![Image](https://github.com/cloudstk/articles/blob/master/sql-database/media/ads-az-sqlserver-object-explorer.jpg "icon")  
@@ -133,4 +133,4 @@ Once sucessfully connected to the Server, the new **cloudstkdemodb** appears in 
 Figure 6.2: An Azure SQL server Object Explorer.  
 
 -------------
-In this article, we have looked at how to create an Azure SQL server database using PowerShell. We have also seteup the firewall and Finally, connected an Azure SQL Server with Azure Data Studio.
+In this article, we have looked at how to create an Azure SQL server database using PowerShell. We have also set up the firewall rules and finally, connected an Azure SQL Server with Azure Data Studio.
