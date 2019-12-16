@@ -82,7 +82,7 @@ First of all, you have to connect to your subscription using the **Connect-AzAcc
          ResourceGroupName               = 'azsqldb-demo-rg'
          ServerName                      = 'cloudstksqlserver'
          DatabaseName                    = 'cloudstkdemodb'
-        RequestedServiceObjectiveName   = 'S0'  
+        RequestedServiceObjectiveName    = 'S0'  
     }
     New-AzureRmSqlDatabase @parameters
 ```
