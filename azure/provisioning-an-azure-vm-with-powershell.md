@@ -16,42 +16,43 @@ Before you begin this tutorial, you must have the following:
 First of all, you have to connect to your subscription using the **Connect-AzAccount** cmdlet.
 ```powershell
     Connect-AzAccount
-    ```  
+```  
     Running this command will open a Microsoft login window, as shown in figure 1.0. Log in using your Azure subscription creentials.
 
-    ![Image](https://github.com/cloudstk/articles/blob/master/sql-database/media/connect-to-zure-subscription.jpg "icon")  
+   ![Image](https://github.com/cloudstk/articles/blob/master/sql-database/media/connect-to-zure-subscription.jpg "icon")  
 
     Figure 1.0: Connect to your Azure subscription.
 
-    On completion of a successful login, it will display the following information, as shown below figure 1.1
+   On completion of a successful login, it will display the following information, as shown below figure 1.1
 
-    ![Image](https://github.com/cloudstk/articles/blob/master/sql-database/media/connect-azaccount.jpg "icon")  
+   ![Image](https://github.com/cloudstk/articles/blob/master/sql-database/media/connect-azaccount.jpg "icon")  
 
     Figure 1.1: Successful login information.
 
 2. Create Resoucr Group
- Create an Azure resource group with **New-AzResourceGroup**. A resource group is a logical container into which Azure resources are deployed and managed.
+ Create an Azure resource group with **New-AzResourceGroup**. A resource group is a logical container into which Azure resources are deployed and managed. 
 
-  In this step, we will create an Azure Resource Group by using just a **Name** and **Location** parameters.
+  In this step, we will create an Azure Resource Group by using just a **Name** and **Location** parameters.  
 ```powershell
     $parameters = @{
         Name               = 'azvm-demo-rg'
         Location           = 'northeurope'
     }
         New-AzResourceGroup @parameters
-    ```
+```
 
     You can see the output as shown in figure 2.
 
-    ![Image](https://github.com/cloudstk/articles/blob/master/sql-database/media/new-resource-group.jpg "icon")  
+   ![Image](https://github.com/cloudstk/articles/blob/master/sql-database/media/new-resource-group.jpg "icon")  
 
     Figure 2: The creation of an Azure Resouce Group.
 
 3. Provisioning a New Azure VM.
     To provision a new VM, run the **New-AzVm** with the following parameters:
-    ```powershell
+```powershell
     $parameters = @{
         ResourceGroupName               = 'azvm-demo-rg'
+        Name                            = 'vm-demo-win-01'
         Location                        = 'northeurope'
         VirtualNetworkName              = 'demovmVnet'
         SubnetName                      = 'demovmSubnet'
@@ -59,11 +60,15 @@ First of all, you have to connect to your subscription using the **Connect-AzAcc
         PublicIpAddressName             = 'demovmPublicIP'
         }
         New-AZvm @parameters
-    ```
+ ```
 
     The VM deployment process can take several minutes to complete. Once the deployment is complete, you can see the output as shown in figure 3.
 
-3. Connect to the VM using PowerShell
+4. Connect to the VM using PowerShell
     Once a VM is deployed, you can connect to the VM using PowerShell by running the **Enable-PSRemoting** cmdlet:
 
+```powershell
+Enable-AzVMPSRemoting -Name 'vm-demo-win-01' -ResourceGroupName 'azvm-demo-rg' -Protocol https -OsType Windows
+
+ ```
 

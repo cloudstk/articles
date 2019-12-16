@@ -37,7 +37,7 @@ First of all, you have to connect to your subscription using the **Connect-AzAcc
 
 2. Create a new resource group  
  In this step, we will create an Azure Resource Group by using just a **Name** and **Location** parameters.
-    ```powershell
+```powershell
     $parameters = @{
         Name               = 'azsqldb-demo-rg'
         Location           = 'northeurope'
@@ -67,7 +67,7 @@ First of all, you have to connect to your subscription using the **Connect-AzAcc
         }
 
         New-AzSqlServer @parameters
-```
+    ```
     ![Image](https://github.com/cloudstk/articles/blob/master/sql-database/media/create-an-azure-sql-server.jpg "icon")  
 
     Figure 3 : The creation of an Azure Resouce Group.
@@ -77,7 +77,7 @@ First of all, you have to connect to your subscription using the **Connect-AzAcc
 4. Create an Azure SQL Database 
  Let's start with the creation of new Azure SQL Database with the following parameters.  
 
-    ```powershell
+```powershell
     $parameters = @{
          ResourceGroupName               = 'azsqldb-demo-rg'
          ServerName                      = 'cloudstksqlserver'
