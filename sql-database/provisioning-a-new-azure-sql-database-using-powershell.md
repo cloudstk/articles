@@ -130,7 +130,7 @@ First of all, you have to connect to your subscription using the **Connect-AzAcc
 
  Figure 6.1: **Connection** pane.
 
-    Once sucessfully connected to the Server, the new **cloudstkdemodb** appears in the list of databases, as shown figure 6.2.  
+Once sucessfully connected to the Server, the new **cloudstkdemodb** appears in the list of databases, as shown figure 6.2.  
 
 
    ![Image](https://github.com/cloudstk/articles/blob/master/sql-database/media/ads-az-sqlserver-object-explorer.jpg "icon")  
