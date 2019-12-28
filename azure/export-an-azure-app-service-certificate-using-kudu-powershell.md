@@ -4,7 +4,7 @@ Export an Azure App Service Certificate Using Kudu PowerShell
 How to open Kudu PowerShell console
 --------------------------
 You can open Kudu Powershell console using the following:
-1. If your Azure Web app URL is https&#58;//mysite.azurewebsites.net/, then the URL of the Kudu will be              https&#58;//mysite.scm.azurewebsites.net/ .  Once authenticated, you can see a similar screen, as shown in figure 2.0, if Azure App Service is running on Windows.
+1. If your Azure Web app URL is h<span>ttps://</span>mysite.azurewebsites.net/, then the URL of the Kudu will be h<span>ttps://</span>mysite.scm.azurewebsites.net/ .  Once authenticated, you can see a similar screen, as shown in figure 2.0, if Azure App Service is running on Windows.
 2. In the left panel of the App Service, click on **Advanced Tools** and then click on **Go** link, as shown on figure 1.0. 
 
  ![Image](https://github.com/cloudstk/articles/blob/master/azure/media/azure-app-service-blade.jpg "icon")
