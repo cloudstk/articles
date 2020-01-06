@@ -50,11 +50,11 @@ In this tutorial, we will look at the following T-SQL statements to configure Se
 
     To update an existing server-level firewall rule, execute the **sp_set_firewall_rule** with the firewall rule name and IP addresses you want to update.
     
-    ```
+```
     Execute sp_set_firewall_rule @name = N'DKclientIP', 
         @start_ip_address   = 'xxx.xxx.48.132', 
         @end_ip_address     = 'xxx.xxx.48.132'
-    ```
+```
 
     Next, run the  **Select * from sys.firewall_rules** command to verify updated firewall rule.
 
@@ -66,6 +66,6 @@ In this tutorial, we will look at the following T-SQL statements to configure Se
 
     To verify, execute the following command.
 
-    ```
+```
     Select * from sys.firewall_rules
-    ```
+```
