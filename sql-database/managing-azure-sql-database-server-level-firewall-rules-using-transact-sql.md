@@ -31,8 +31,8 @@ In this tutorial, we will look at the following T-SQL statements to configure Se
 3.	Run this query to add a new server-level firewall rule:
     ```
     Execute sp_set_firewall_rule @name = N'DKclientIP', 
-        @start_ip_address   = 'xxx.xxx.xxx.xxx', 
-        @end_ip_address     = 'xxx.xxx.xxx.xxx'
+        @start_ip_address   = 'xxx.xxx.48.131', 
+        @end_ip_address     = 'xxx.xxx.48.131'
     ```
 
     Next, execute the following command to verify the added firewall rule.
