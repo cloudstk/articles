@@ -16,7 +16,7 @@ In this tutorial, we will look at the following T-SQL statements to configure Se
 
    ![Image](https://github.com/cloudstk/articles/blob/master/sql-database/media/ads-new-connection-using.jpg "icon")      
 
-    Figure 1 : **Connection** pane
+Figure 1 : **Connection** pane
 
 2.	Open a New Query window on the master database and run the following query to list all the active server-level firewall rules on the server, as shown in figure 2.   
     ```
@@ -48,7 +48,7 @@ In this tutorial, we will look at the following T-SQL statements to configure Se
     Figure 3. : Verifying the added rule
 
 
-    To update an existing server-level firewall rule, execute the **sp_set_firewall_rule** with the firewall rule name and IP addresses you want to update.
+To update an existing server-level firewall rule, execute the **sp_set_firewall_rule** with the firewall rule name and IP addresses you want to update.
     
 ```
     Execute sp_set_firewall_rule @name = N'DKclientIP', 
@@ -56,7 +56,7 @@ In this tutorial, we will look at the following T-SQL statements to configure Se
         @end_ip_address     = 'xxx.xxx.48.132'
 ```
 
-    Next, run the  **Select * from sys.firewall_rules** command to verify updated firewall rule.
+Next, run the  **Select * from sys.firewall_rules** command to verify updated firewall rule.
 
     
 4.	Execute the following command to delete an existing server-level firewall rule.
