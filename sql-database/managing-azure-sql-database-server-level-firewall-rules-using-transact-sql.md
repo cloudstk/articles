@@ -4,7 +4,7 @@ Azure SQL Database uses firewall rules to control access to your server and data
 
 There are several ways to configure Firewall rules for Azure SQL server. You can configure server-level IP firewall rules by using the Azure portal, PowerShell, REST API or T-SQL statements. 
 
-In this tutorial, we will look at the following T-SQL statements to configure Server-level firewall rules.
+In this tutorial, we will look at the following T-SQL statements to configure Server-level firewall rules.  
 **Select * from sys.firewall_rules** –  List all of the existing server-level firewall rules associated with your Azure SQL Database Server
 **sp_set_firewall-rule** -  Create or updates server-level IP firewall rules
 **sp_delete_firewall_rule** - Removes server-level IP firewall rules
@@ -14,14 +14,16 @@ In this tutorial, we will look at the following T-SQL statements to configure Se
 1.	Open Azure Data Studio and connect to your Azure SQL server.
     On the **Servers** menu, Click on **New Connection** to open the **Connection** pane. Fill the connection details and then click on the **Connect** button to connect to Azure SQL Server, as shown in figure 1
 
+   ![Image](https://github.com/cloudstk/articles/blob/master/sql-database/media/ads-new-connection-using.jpg "icon")      
 
-
-    Figure 1 : 
+    Figure 1 : **Connection** pane
 
 2.	Open a New Query window on the master database and run the following query to list all the active server-level firewall rules on the server, as shown in figure 2.   
     ```
-        Select * from sys.firewall_rules
+    Select * from sys.firewall_rules
     ```
+
+   ![Image](https://github.com/cloudstk/articles/blob/master/sql-database/media/active-server-level-firewall-rules.jpg "icon")     
 
 
     Figure 2.0 Listing the server-level firewall rules
@@ -38,41 +40,32 @@ In this tutorial, we will look at the following T-SQL statements to configure Se
     ```
     Select * from sys.firewall_rules
     ```
-    In below figure 3, we can see now a new firewall rule added with the name as ‘DKclientIP’ and IP range from 0.0 to 3.. 
+    In below figure 3, we can see now a new firewall rule added with the name as ‘DKclientIP’ and IP range from xxx.xxx.48.131 to xxx.xxx.48.131
 
 
+   ![Image](https://github.com/cloudstk/articles/blob/master/sql-database/media/verifying-the-added-rule.jpg "icon")     
 
     Figure 3. : Verifying the added rule
 
 
-    To update an existing server-level firewall rule, execute the sp_set_firewall_rule with the firewall rule name and IP addresses you want to update.
+    To update an existing server-level firewall rule, execute the **sp_set_firewall_rule** with the firewall rule name and IP addresses you want to update.
     
     ```
     Execute sp_set_firewall_rule @name = N'DKclientIP', 
-        @start_ip_address   = 'xxx.xxx.xxx.xxx', 
-        @end_ip_address     = 'xxx.xxx.xxx.xxx'
+        @start_ip_address   = 'xxx.xxx.48.132', 
+        @end_ip_address     = 'xxx.xxx.48.132'
     ```
 
     Next, run the  **Select * from sys.firewall_rules** command to verify updated firewall rule.
 
-
-    Figure 4: Verifying the updated firewall rule
-
-
+    
 4.	Execute the following command to delete an existing server-level firewall rule.
-
+```
     Execute sp_delete_firewall_rule @name = N’DK_ClientIP’
+```
 
     To verify, execute the following command.
 
     ```
     Select * from sys.firewall_rules
     ```
-
-
-
-
-
-    Figure 5: Verifying the deleted firewall rule.
-
-

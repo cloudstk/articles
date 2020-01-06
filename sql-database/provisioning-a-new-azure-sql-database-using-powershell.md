@@ -52,7 +52,7 @@ First of all, you have to connect to your subscription using the **Connect-AzAcc
     Figure 2: The creation of an Azure Resouce Group.
 
 3. Create an Azure SQL Server  
- To create an Azure SQL Server instance, we use the following paramenters:   
+ To create an Azure SQL Server instance, we use the following parameters:   
 ```powershell
         $Username   = "cloudstksql"
         $Password   = "pa$$w@rd1" | ConvertTo-SecureString -AsPlainText -Force
@@ -75,7 +75,7 @@ First of all, you have to connect to your subscription using the **Connect-AzAcc
     The server is ready, in the next step, we will create an Azure SQL Database.
 
 4. Create an Azure SQL Database 
- Let's start with the creation of new Azure SQL Database with the following parameters.  
+ Let's start with the creation of a new Azure SQL Database with the following parameters.  
 
 ```powershell
     $parameters = @{
@@ -100,7 +100,7 @@ First of all, you have to connect to your subscription using the **Connect-AzAcc
      $parameters = @{
      ResourceGroupName = 'azsqldb-demo-rg'
      ServerName        = 'cloudstksqlserver'
-     FirewallRuleName  = 'AllowedCliedIP'
+     FirewallRuleName  = 'AllowedClientIP'
      StartIpAddress    = 'xxx.xxx.xxx.xxx'
      EndIpAddress      = 'xxx.xxx.xxx.xxx'
    }
@@ -130,7 +130,7 @@ First of all, you have to connect to your subscription using the **Connect-AzAcc
 
  Figure 6.1: **Connection** pane.
 
-Once sucessfully connected to the Server, the new **cloudstkdemodb** appears in the list of databases, as shown figure 6.2.  
+Once successfully connected to the Server, the new **cloudstkdemodb** appears in the list of databases, as shown in figure 6.2.  
 
 
    ![Image](https://github.com/cloudstk/articles/blob/master/sql-database/media/ads-az-sqlserver-object-explorer.jpg "icon")  
