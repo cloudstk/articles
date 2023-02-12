@@ -8,3 +8,5 @@ Useful links
 
 [visit the Cost Management YouTube channel](https://www.youtube.com/c/AzureCostManagement)
 
+[Tutorial: Create and manage Azure budgets](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/tutorial-acm-create-budgets)
+
